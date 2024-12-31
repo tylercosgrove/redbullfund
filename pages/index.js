@@ -22,7 +22,7 @@ export default function Home({ grantees }) {
           >
             @redbullfuturist
           </a>
-          , and if it sounds cool, win some money buy a Red Bull!
+          , and if it sounds cool, win some money so you can go buy a Red Bull!
         </p>
 
         <p className="mt-4 text-xs text-center">

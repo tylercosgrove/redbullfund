@@ -66,6 +66,14 @@ export default function Home({ grantees }) {
             rel="noopener noreferrer"
           >
             @jimbelosic
+          </a>{" "}
+          <a
+            className="text-blue-500 cursor-pointer"
+            href="https://x.com/tylercosg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @tylercosg
           </a>
         </p>
         {/*<p className="text-xs text-center">

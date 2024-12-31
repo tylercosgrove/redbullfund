@@ -64,6 +64,10 @@ export default function Home({ grantees }) {
               , and if it sounds cool, win some money so you can go buy a Red
               Bull!
             </p>
+            <p className="text-center mt-2 font-serif">
+              Caffinated <span className="font-sans font-bold">7</span>{" "}
+              Futurists and counting.
+            </p>
 
             {/* 
               Hide this inline <Image /> on large screens 

@@ -1,114 +1,125 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { supabase } from "@/supabase";
+import Head from "next/head";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function Home() {
+export default function Home({ grantees }) {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Head>
+        <title>Red Bull Fund</title>
+      </Head>
+      <div className="w-fit m-auto mt-4 p-2">
+        <p className="font-serif text-4xl text-center">RED BULL FUND</p>
+        <p className="text-center font-serif text-lg mt-2">
+          We give microgrants ($4) to anyone in need of a pick me up.
+        </p>
+        <p className="text-center font-serif text-lg">
+          Simply tweet what you're working on to{" "}
+          <a
+            className="text-blue-500 cursor-pointer"
+            href="https://x.com/redbullfuturist"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @redbullfuturist
+          </a>
+          , and if it sounds cool, win some money buy a Red Bull!
+        </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <p className="mt-4 text-xs text-center">
+          Special thanks to{" "}
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+            className="text-blue-500 cursor-pointer"
+            href="https://x.com/kaeladair"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
+            @kaeladair
+          </a>{" "}
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+            className="text-blue-500 cursor-pointer"
+            href="https://x.com/zanehengsperger"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            @zanehengsperger
+          </a>{" "}
+          <a
+            className="text-blue-500 cursor-pointer"
+            href="https://x.com/Robot_Brains"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @Robot_Brains
+          </a>{" "}
+          <a
+            className="text-blue-500 cursor-pointer"
+            href="https://x.com/iamjasonlevin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @iamjasonlevin
+          </a>{" "}
+          <a
+            className="text-blue-500 cursor-pointer"
+            href="https://x.com/jimbelosic"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @jimbelosic
           </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </p>
+        {/*<p className="text-xs text-center">
+          Want to help out? Send{" "}
+          <a
+            className="text-blue-500 cursor-pointer"
+            href="https://x.com/redbullfuturist"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @redbullfuturist
+          </a>{" "}
+          a DM.
+  </p>*/}
+      </div>
+
+      <div className="mx-auto px-4 w-full columns-1 sm:columns-2 lg:columns-3 gap-4">
+        {grantees.map((tweet) => (
+          <div key={tweet.tweet_id} className="break-inside-avoid">
+            <blockquote className="twitter-tweet max-w-sm">
+              <a
+                href={`https://twitter.com/anyuser/status/${tweet.tweet_id}`}
+              ></a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charSet="utf-8"
+              ></script>
+            </blockquote>
+          </div>
+        ))}
+      </div>
+    </>
   );
+}
+
+export async function getServerSideProps() {
+  const { data: grantees, error } = await supabase
+    .from("rbf")
+    .select("*")
+    .order("created_at", { ascending: false }); // Sort by 'created_at' descending (newest first)
+
+  if (error) {
+    console.error("Error fetching data:", error);
+    return {
+      props: {
+        grantees: [],
+      },
+    };
+  }
+
+  return {
+    props: {
+      grantees,
+    },
+  };
 }

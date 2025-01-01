@@ -193,13 +193,20 @@ export default function Home({ grantees }) {
           {/* Grantees Section */}
           <div className="mx-auto px-4 w-full columns-1 sm:columns-2 lg:columns-3 gap-4 mt-8">
             {grantees.map((tweet) => (
-              <div key={tweet.tweet_id} className="break-inside-avoid m-auto">
-                <blockquote className="twitter-tweet">
-                  <a
-                    href={`https://twitter.com/anyuser/status/${tweet.tweet_id}`}
-                  ></a>
-                </blockquote>
-              </div>
+              <>
+                {tweet.tweet_id != null && (
+                  <div
+                    key={tweet.tweet_id}
+                    className="break-inside-avoid m-auto"
+                  >
+                    <blockquote className="twitter-tweet">
+                      <a
+                        href={`https://twitter.com/anyuser/status/${tweet.tweet_id}`}
+                      ></a>
+                    </blockquote>
+                  </div>
+                )}
+              </>
             ))}
           </div>
         </div>

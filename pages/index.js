@@ -139,6 +139,14 @@ export default function Home({ grantees }) {
                 rel="noopener noreferrer"
               >
                 @tylercosg
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/withtenacity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @withtenacity
               </a>
             </p>
             {/*

@@ -167,11 +167,6 @@ export default function Home({ grantees }) {
                   <a
                     href={`https://twitter.com/anyuser/status/${tweet.tweet_id}`}
                   ></a>
-                  <script
-                    async
-                    src="https://platform.twitter.com/widgets.js"
-                    charSet="utf-8"
-                  ></script>
                 </blockquote>
               </div>
             ))}

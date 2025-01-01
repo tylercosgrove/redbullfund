@@ -64,7 +64,7 @@ export default function Home({ grantees }) {
               Bull!
             </p>
             <p className="text-center mt-2 font-serif">
-              Caffeinated <span className="font-sans font-bold">7</span>{" "}
+              Caffeinated <span className="font-sans font-bold">10</span>{" "}
               Futurists and counting.
             </p>
 
@@ -147,6 +147,30 @@ export default function Home({ grantees }) {
                 rel="noopener noreferrer"
               >
                 @withtenacity
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/sporadicalia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @sporadicalia
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/tobyfenner"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @tobyfenner
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/heyecs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @heyecs
               </a>
             </p>
             {/*

@@ -142,6 +142,7 @@ export default function Home({ grantees }) {
                 @tylercosg
               </a>
             </p>
+            {/*
             <a
               href="https://t.co/PxsNy1L4zw"
               target="_blank"
@@ -155,7 +156,7 @@ export default function Home({ grantees }) {
                 height={30}
                 className="bg-black bg-opacity-10 rounded m-auto mt-2 lg:m-0 lg:bg-opacity-20"
               />
-            </a>
+          </a>*/}
           </div>
 
           {/* Grantees Section */}

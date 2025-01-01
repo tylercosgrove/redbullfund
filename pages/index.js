@@ -14,10 +14,9 @@ export default function Home({ grantees }) {
         min-h-screen
         bg-none
         lg:bg-[url('/fund-image.jpg')]
-        lg:bg-cover
-        lg:bg-center
-        lg:bg-no-repeat
-        
+          lg:bg-[length:100%_auto]
+          lg:bg-no-repeat
+          lg:bg-top
       "
       >
         <div className="relative bg-white bg-opacity-20 min-h-screen p-2">

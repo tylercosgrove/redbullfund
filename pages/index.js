@@ -65,7 +65,7 @@ export default function Home({ grantees }) {
               Bull!
             </p>
             <p className="text-center mt-2 font-serif">
-              Caffinated <span className="font-sans font-bold">7</span>{" "}
+              Caffeinated <span className="font-sans font-bold">7</span>{" "}
               Futurists and counting.
             </p>
 

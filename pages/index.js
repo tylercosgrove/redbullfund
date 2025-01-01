@@ -2,7 +2,7 @@ import { supabase } from "@/supabase";
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Home({ grantees }) {
+export default function Home({ grantees, numFuturists }) {
   return (
     <>
       <Head>
@@ -64,7 +64,8 @@ export default function Home({ grantees }) {
               Bull!
             </p>
             <p className="text-center mt-2 font-serif">
-              Caffeinated <span className="font-sans font-bold">10</span>{" "}
+              Caffeinated{" "}
+              <span className="font-sans font-bold">{numFuturists}</span>{" "}
               Futurists and counting.
             </p>
 
@@ -230,9 +231,13 @@ export async function getServerSideProps() {
     };
   }
 
+  const nullTweetRow = grantees.find((row) => row.tweet_id === null);
+  const numFuturists = nullTweetRow ? nullTweetRow.text : null;
+
   return {
     props: {
       grantees,
+      numFuturists,
     },
   };
 }

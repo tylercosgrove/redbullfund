@@ -196,6 +196,14 @@ export default function Home({ grantees, numFuturists }) {
                 rel="noopener noreferrer"
               >
                 @2fat4karting
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/rashad_ahmadov_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @rashad_ahmadov_
               </a>
             </p>
             {/*

@@ -172,6 +172,30 @@ export default function Home({ grantees, numFuturists }) {
                 rel="noopener noreferrer"
               >
                 @heyecs
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/inyouendohs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @inyouendohs
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/grapplingdev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @grapplingdev
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/2fat4karting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @2fat4karting
               </a>
             </p>
             {/*

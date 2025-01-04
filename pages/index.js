@@ -204,6 +204,14 @@ export default function Home({ grantees, numFuturists }) {
                 rel="noopener noreferrer"
               >
                 @rashad_ahmadov_
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/andrewmccalip"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @andrewmccalip
               </a>
             </p>
             {/*

@@ -212,6 +212,14 @@ export default function Home({ grantees, numFuturists }) {
                 rel="noopener noreferrer"
               >
                 @andrewmccalip
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/codyaims"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @codyaims
               </a>
             </p>
             {/*

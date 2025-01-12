@@ -220,6 +220,14 @@ export default function Home({ grantees, numFuturists }) {
                 rel="noopener noreferrer"
               >
                 @codyaims
+              </a>{" "}
+              <a
+                className="text-blue-800 cursor-pointer "
+                href="https://x.com/Hugo_Peterson6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @Hugo_Peterson6
               </a>
             </p>
             {/*
